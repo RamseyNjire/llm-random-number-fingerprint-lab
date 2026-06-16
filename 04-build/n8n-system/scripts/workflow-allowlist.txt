@@ -1,0 +1,3 @@
+# Auto-managed by scripts/deploy-random-number-workflow.py
+# Random number fingerprint workflow IDs
+# Run scripts/deploy-random-number-workflow.py to populate this file.

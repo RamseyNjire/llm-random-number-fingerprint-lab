@@ -1,0 +1,25 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+secrets/
+**/secrets/*
+!**/secrets/README.md
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+
+# Runtime outputs
+backups/
+tmp/
+*.log
+
+# OS/editor noise
+.DS_Store
+.vscode/settings.json
+
+# Python / Node local state
+__pycache__/
+*.pyc
+node_modules/
