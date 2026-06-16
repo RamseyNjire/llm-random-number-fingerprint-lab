@@ -8,12 +8,6 @@ Import-ready starter assets for the LLM random-number fingerprint experiment.
 - `experiment-cases-template.csv`
 - `experiment-results-headers.csv`
 
-The same importable workflow is also copied to:
-
-- `../active/random-number-fingerprint-experiment-runner.importable.json`
-
-That copy exists so GitHub visitors can find the n8n workflow without knowing to open the templates folder.
-
 ## Google Sheet Setup
 
 Create one spreadsheet with 2 tabs:
