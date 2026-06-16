@@ -35,8 +35,13 @@ shopt -s nullglob
 for workflow_file in workflows/active/*.json; do
   workflow_id="$(jq -r '.id // empty' "${workflow_file}")"
   if [[ -z "${workflow_id}" ]]; then
-    echo "ERROR: workflow file missing .id: ${workflow_file}"
-    exit 1
+    if jq -e '.name and .nodes and .connections' "${workflow_file}" >/dev/null; then
+      echo "INFO: ${workflow_file} is an importable template-style workflow with no live .id"
+      continue
+    else
+      echo "ERROR: workflow file missing .id and importable workflow fields: ${workflow_file}"
+      exit 1
+    fi
   fi
 
   is_allowlisted="false"

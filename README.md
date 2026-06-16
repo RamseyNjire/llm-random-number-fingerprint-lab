@@ -31,6 +31,7 @@ That means this is not a final statistical proof. It is an exploratory fingerpri
 ## Repo Map
 
 - `04-build/n8n-system/` - runnable n8n workflow templates, scripts, sheet schemas, and operational docs
+- `04-build/n8n-system/workflows/active/random-number-fingerprint-experiment-runner.importable.json` - sanitized importable n8n workflow
 - `04-build/n8n-system/workflows/templates/` - importable workflow template and Google Sheets CSV headers/starter cases
 - `04-build/n8n-system/scripts/` - setup, deployment, control-row, prompt-battery, and analysis scripts
 - `02-research/` - research framing and source notes
